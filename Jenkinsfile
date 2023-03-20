@@ -8,7 +8,7 @@ pipeline {
         //SERVER_CRIDENTIALS = credentials('github-credintials') doesnt work 
     }
     parameters {
-        string(name: 'BRANCH_NAME', defaultValue: 'dev', description: 'branch name')
+        //string(name: 'BRANCH_NAME', defaultValue: 'dev', description: 'branch name')
         string(name: 'VERSION', defaultValue: '1.0.0', description: 'version to deploy to server')
         choice(name: 'ENVIRONMENT', choices: ['dev', 'qa', 'prod'], description: 'environment to deploy to')
         booleanParam(name: 'IS_DEPLOY', defaultValue: false, description: 'is deploy to server')
