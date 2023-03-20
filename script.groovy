@@ -4,7 +4,7 @@ def buildApp(){
 
 def deployApp(){
     echo 'deploying app'
-    echo "deploy version ${VERSION}"
+    echo "deploy version ${params.VERSION}"
 }
 
 return this
