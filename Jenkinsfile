@@ -5,7 +5,7 @@ pipeline {
     agent any 
     environment {
         NEW_VERSION ='1.3.0'
-        SERVER_CRIDENTIALS = credentials('github-credintials')
+        //SERVER_CRIDENTIALS = credentials('github-credintials') doesnt work 
     }
     parameters {
         string(name: 'BRANCH_NAME', defaultValue: 'dev', description: 'branch name')
