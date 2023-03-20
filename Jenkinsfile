@@ -32,7 +32,7 @@ pipeline {
                 echo 'building the app'
                 withCredentials([usernamePassword(credentialsId: 'github-credintials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                     echo "username: ${USERNAME}"
-                    echo "password: ${PASSWORD}"
+              
                 }
                 script {
                     gv.buildApp()
