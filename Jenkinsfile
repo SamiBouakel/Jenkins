@@ -30,10 +30,7 @@ pipeline {
 
             steps{
                 echo 'building the app'
-                withCredentials([usernamePassword(credentialsId: 'github-credintials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
-                    echo "username: ${USERNAME}"
-              
-                }
+                
                 script {
                     gv.deployApp()
                 }
